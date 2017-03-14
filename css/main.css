@@ -621,6 +621,52 @@ footer .input input[type="submit"]{
     margin-top: 20px;
 }
 /* Media queries */
+@media screen and (min-width: 1920px) {
+    .grid div.hover{
+        height: 350px;
+    }
+    .movie-suggestion{
+        width: 1170px;
+    }
+    .suggestion{
+        margin-left:auto;
+    }
+    .container-fluid.movie-suggestion {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .movie-suggestion .movies{
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    .movie-suggestion div.hover{
+        height:250px;
+    }
+}
+
+@media screen (min-width: 1440px) and (max-width: 1920px) {
+    .grid div.hover{
+        height: 310px;
+    }
+    .movie-suggestion{
+        width: 1170px;
+    }
+    .suggestion{
+        margin-left:auto;
+    }
+    .container-fluid.movie-suggestion {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .movie-suggestion .movies{
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    .movie-suggestion div.hover{
+        height:250px;
+    }
+}
+
 @media screen and (max-width: 50em) {
 	.content {
 		padding: 0 10px;
