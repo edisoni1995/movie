@@ -42,14 +42,11 @@
 	        <span class="icon-bar"></span>
 	      </button>
 	      <a class="navbar-brand" href="#"><img class="img-responsive" src="img/icon.png" alt=""></a>
-	      
-	      <button class="btn btn-default btn-search"><i class="fa fa-search"></i></button>
-	      
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <form action="search.html" class="navbar-form navbar-left">
+	      <form class="navbar-form navbar-left">
 	        <div class="form-group" style="display:inline;">
 	            <input type="text" class="form-control" placeholder="Movie Search...">
 	            <input type="submit" value="Search">
@@ -68,22 +65,138 @@
 
 	<div class="container-fluid suggestion-header">
 		<div class="suggestion-title">
-            <span class="pull-left">Suggestion <i class="fa fa-chevron-right ml10"></i></span>
-            
-            <ul role="tablist" class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" role="tab" href="#movie-featured" aria-expanded="true">Featured</a></li>
-                <li class=""><a  data-toggle="tab" role="tab" href="#topview-today" aria-expanded="false">Top viewed today</a></li>
-                <li class=""><a data-toggle="tab" role="tab" href="#top-favorite" aria-expanded="false">Most Favorite</a></li>
-                <li class=""><a  data-toggle="tab" role="tab" href="#top-rating" aria-expanded="false">Top Rating</a></li>
-                <li class=""><a  data-toggle="tab" role="tab" href="#top-imdb" aria-expanded="false">Top IMDb</a></li>
-            </ul>
-            <div class="clearfix"></div>
+            <span class="pull-left">Search <i class="fa fa-search"></i></span>
+            <div class="filter-toggle">
+            	<button data-toggle="collapse" data-target="#filter" class="btn btn-orange pull-right"><i class="fa fa-filter"></i>Filter</button></div>
         </div>
 	</div>		
+	<div class="container-fluid filter">
+		<div id="filter" class="collapse">
+		    
+		    <div class="filter-content row">
+		        <div class="col-sm-12">
+		            <div>
+		                <div class="col-md-6">
+		                    <span class="title">Film Type</span>
+		                    <ul>
+		                        <li>
+		                        	<label>
+		                        		<input checked="" type="radio">All
+		                        	</label>
+		                        </li>
+
+		                        <li>
+		                        	<label>
+		                        		<input type="radio">Movies
+		                        	</label>
+		                       	</li>
+
+		                        <li>
+		                        	<label>
+		                        		<input type="radio">TV-Series
+		                        	</label>
+		                        </li>
+		                    </ul>
+		                </div>
+		                <div class="col-md-6">
+		                    <span class="title">Quality</span>
+		                    <ul>
+		                        <li>
+		                        	<label>
+		                        		<input checked=""  type="radio">All
+		                            </label>
+		                        </li>
+		                        <li>
+		                        	<label>
+		                        		<input type="radio"> HD
+		                        	</label>
+		                        </li>
+
+		                        <li>
+		                        	<label>
+		                        		<input type="radio">CAM
+		                            </label>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+
+		            <div class="col-md-12 genre">
+		                <span class="title">Genre</span>
+		                <ul>
+		                    <li>
+		                        <label>
+		                            <input type="checkbox"> Action
+		                        </label>
+		                    </li>
+		                    <li>
+		                        <label>
+		                            <input type="checkbox"> Action
+		                        </label>
+		                    </li>
+		                    <li>
+		                        <label>
+		                            <input type="checkbox"> Action
+		                        </label>
+		                    </li>
+		                    <li>
+		                        <label>
+		                            <input type="checkbox"> Action
+		                        </label>
+		                    </li>
+		                    <li>
+		                        <label>
+		                            <input type="checkbox"> Action
+		                        </label>
+		                    </li>
+		                    <li>
+		                        <label>
+		                            <input type="checkbox"> Action
+		                        </label>
+		                    </li>
+		                        
+		                </ul>
+		            </div>
+		            <div class="col-md-12 release">
+		                <span class="title">Release</span>
+		                <ul>
+		                    <li>
+		                    	<label>
+		                    		<input type="radio">All
+		                    	</label>
+		                    </li>
+
+		                    <li>
+		                        <label>
+		                                <input type="radio"> 2017                            
+		                        </label>
+		                    </li>
+		              		
+		              		<li>
+		                        <label>
+		                                <input type="radio"> 2017                            
+		                        </label>
+		                    </li>
+
+		                    <li>
+		                        <label>
+		                                <input type="radio"> 2017                            
+		                        </label>
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="col-md-12 filter-btn text-center">
+			        <button class="btn btn-lg btn-orange">Filter movies</button>
+			    </div>
+		    </div>
+		    
+		</div>
+	</div>
 
     <div class="container-fluid">
     	<div class="row">
-    		<div class="movies grid">
+    		<div class="movies grid search-page">
 		    	<div class="col-md-2 col-xs-12">
 		    			<div class="hover">
 							<span class="quality">CAM</span>
