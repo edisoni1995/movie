@@ -83,10 +83,63 @@ nav.navbar-default .navbar-nav li a{
     color:#000;
 }
 
+.dropdown.suggest{
+    z-index: 100;
+}
+.dropdown.suggest ul li a{
+    height: 60px;
+    display: inline-block;
+    min-width: 50px;
+}
+.dropdown.suggest ul li .info{
+    display: inline-block;
+    margin-left: 10px;
+}
 
+.suggest ul{
+    padding-left: 5px;
+    background: #fff;
+    padding: 20px 0px;
+    border-top: 2px solid #fe7900;
+    border-radius: 15px 15px 5px 5px;
+    width: 100%;
+    position: absolute;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 2px #3e3e3e;
+    padding-bottom: 0px;
+    list-style-type: none;
+}
 
+.suggest ul li{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
 
+.suggest ul li:last-child{
+    border-bottom: none;
+}
+.suggest .info .title{
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
 
+.suggest .info .minutes{
+    color:#888;
+}
+.suggest .info .genre{
+    color:#fe7900;
+}
+
+.suggest button{
+    width: 100%;
+    height: 45px;
+    background: #fe7900;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
 .nav-tabs>li>a:hover{
 	color: #fff;
 	outline: none;
@@ -173,7 +226,7 @@ input[type="submit"] {
 .grid div.hover img {
 	position: relative;
 	display: block;
-	min-height: 100%;
+	min-height: 97%;
 	max-width: 100%;
 }
 
@@ -278,8 +331,8 @@ div.hover.hover:hover img {
 }
 
 div.hover.hover:hover div.main-title {
-	-webkit-transform: translate3d(0,-50px,0);
-	transform: translate3d(0,-50px,0);
+	-webkit-transform: translate3d(0,-60px,0);
+	transform: translate3d(0,-60px,0);
 }
 
 div.hover.hover:hover div.hidden-info {
