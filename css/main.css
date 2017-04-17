@@ -2,6 +2,31 @@ body{
 	font-family: "Roboto Condensed", Arial, sans-serif;
 	background: #E5E5E5;
 }
+
+.text-color{
+    color:#fe7900!important;
+}
+
+.background-color{
+    background-color: #fe7900!important;
+}
+
+.background-hover-color:hover{
+    background: #fe7900!important;
+}
+
+.border-color{
+    border-color: #fe7900!important;
+}
+.text-hover-color:hover{
+    color:#fe7900!important;
+}
+.active .text-hover-color{
+    color:#fe7900!important;
+}
+.hover-border-color:hover{
+    border-color: #fe7900!important;
+}
 nav.navbar{
 	height: 80px;
 	padding-top: 10px;
@@ -18,7 +43,9 @@ nav input[type="text"] {
     height: 40px;
     padding: 6px 15px;
 }
-
+.nav-tabs>li>a{
+    border:0px;
+}
 nav .navbar-brand{
     padding: 4px 10px;
     margin-right: 20px;
@@ -27,11 +54,8 @@ nav .navbar-brand{
     z-index: 5;
     position: relative;
 }
-nav.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-	color:#fe7900;	
-}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color:#fe7900;	
     background-color: transparent;
 }
 nav.navbar-default .navbar-nav li a{
@@ -64,7 +88,6 @@ nav.navbar-default .navbar-nav li a{
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
-    background: #fe7900;
     color: #fff;
     border-radius: 3px;
     margin-right:40px;
@@ -128,14 +151,11 @@ nav.navbar-default .navbar-nav li a{
 .suggest .info .minutes{
     color:#888;
 }
-.suggest .info .genre{
-    color:#fe7900;
-}
+
 
 .suggest button{
     width: 100%;
     height: 45px;
-    background: #fe7900;
     color: #fff;
     font-size: 16px;
     border: none;
@@ -174,7 +194,6 @@ nav.navbar-default .navbar-nav li a{
 	opacity: 0;
 }
 input[type="submit"] {
-    background: #fe7900;
     border-radius: 30px;
     height: 40px;
     margin-left: 15px;
@@ -370,7 +389,6 @@ div.hover.hover:hover div.hidden-info {
 }
 
 .hover .quality{
-	background: #fe7900;
     border-radius: 3px;
     color: #fff;
     font-size: 11px;
@@ -410,7 +428,6 @@ div.hover.hover:hover div.hidden-info {
     left: 17px;
 }
 .hover .fa-play-circle{
-	color:#fe7900;
 	z-index: 10;
     position: relative;
 }
@@ -453,13 +470,11 @@ footer .social ul li a {
 }
 
 footer .social ul li a:hover {
-    background: #fe7900;
     color: #fff;
     text-decoration: none;
 }
 
 footer .modul-title h4{
-	color: #fe7900;
     display: inline-block;
     font-size: 24px;
     font-weight: bold;
@@ -562,15 +577,12 @@ footer .input input[type="submit"]{
     min-height: 50px;
 }
 
-.movie-info p a{
-	color:#fe7900;
-}
+
 .movie-info p strong{
 	color:#5bc0de;
 }
 
 .movie-info .quality{
-	background: #fe7900;
     padding: 4px 8px;
     border-radius: 2px;
     color: white;
@@ -588,8 +600,6 @@ footer .input input[type="submit"]{
 
 .movie-info .trailer{
 	color: #fff;
-    background-color: #fe7900;
-    border-color: #fe7900;
     padding: 5px 12px;
     margin-top: -7px;
 }
@@ -614,7 +624,6 @@ footer .input input[type="submit"]{
 /* search page */
 .filter-toggle .btn-orange{
     padding: 6px 30px;
-    background: #fe7900;
     color: #fff;
     font-size: 18px;
     font-family: 'Montserrat';
@@ -633,7 +642,6 @@ footer .input input[type="submit"]{
     font-family: 'Montserrat';
     margin-bottom: 5px;
     display: block;
-    color: #fe7900;
 }
 
 #filter ul {
@@ -666,7 +674,6 @@ footer .input input[type="submit"]{
 }
 
 .filter-btn .btn-orange{
-    background: #fe7900;
     color:#fff;
 }
 .filter-btn{
@@ -690,7 +697,6 @@ footer .input input[type="submit"]{
     padding-bottom: 10px;
 }
 .servers ul li i{
-    color: #fe7900;
     font-size: 20px;
     margin-right: 10px;
 }
@@ -711,7 +717,6 @@ footer .input input[type="submit"]{
 }
 
 .servers ul li a.active{
-    background: #fe7900;
     color:#fff;
 }
 .servers ul li a.active i.fa-play{
@@ -870,7 +875,6 @@ footer .input input[type="submit"]{
     }
     
     input[type="submit"] {
-        background: #fe7900;
         border-radius: 30px;
         margin-left: 4px;
         padding: 0 10px;
